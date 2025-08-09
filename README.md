@@ -1,5 +1,7 @@
 # 🚢 Web Battleship - Multiplayer Game
 
+![Battleship Game Screenshot](./battleship-startpage.png)
+
 A feature-rich multiplayer browser-based implementation of the classic turn-based Battleship game using modern web technologies. Built with real-time WebSocket communication for seamless multiplayer gameplay.
 
 ## ✨ Features
