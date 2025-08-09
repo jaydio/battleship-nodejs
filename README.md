@@ -136,17 +136,30 @@ npm run dev
 
 ## 📁 Project Structure
 
+### Repository Files (Version Controlled)
 ```
 web-battleship/
-├── server.js              # Main server file with game logic
-├── package.json           # Dependencies and scripts
-├── public/
-│   ├── index.html        # Main HTML structure
-│   ├── game.js           # Client-side game logic
-│   └── styles.css        # CSS styling
-├── archived_games.json   # Game history storage
-└── README.md            # This file
+├── server.js                 # Main server file with game logic
+├── package.json             # Dependencies and scripts  
+├── LICENSE                  # MIT license
+├── README.md               # This documentation file
+├── .gitignore              # Git ignore rules
+├── battleship-startpage.png # Game screenshot
+└── public/
+    ├── index.html          # Main HTML structure
+    ├── game.js            # Client-side game logic
+    └── styles.css         # CSS styling
 ```
+
+### Runtime Files (Not Version Controlled)
+These files are created automatically when you run the game:
+```
+├── node_modules/           # Dependencies (created by npm install)
+├── game_archive.json      # Game history storage (created at runtime)
+└── archived_games.json    # Alternative archive file name
+```
+
+> **📝 Note**: Game archives are saved locally in `game_archive.json` in the project root directory. This file contains the history of finished and unfinished games with player statistics and is automatically created when games are completed or abandoned.
 
 ## 🌐 Browser Compatibility
 
